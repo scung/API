@@ -25,7 +25,7 @@ api_call('user?q=sylvia.cung', 'GET', null, function(response)
 	}); 
 });
 
-});
+};
 
 
 
