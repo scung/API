@@ -88,8 +88,9 @@ app.post('/recognitionPOST', function(req,res,next){
 	res.end("Your recognition has been posted!");
 }); 
 	
-//listen to localhost port 3000
-app.listen(3000);
+//listen to localhost port 3000 - can't tell which port it will be listening on for Heroku, need to set a environment variable
+var port = Number(process.env.PORT || 3000);
+app.listen(port);
 console.log('Listening on port 3000...');
 
 //function to call Achievers API
